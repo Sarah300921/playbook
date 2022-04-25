@@ -1,0 +1,14 @@
+{
+  "name": "twitter_proy",
+  "version": "1.0.0",
+  "description": "\"Proyecto fake twitter\"",
+  "main": "index.js",
+    "scripts": {
+        "test": "node ./node_modules/jest/bin/jest"
+    },
+  "author": "\"SLV\"",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
