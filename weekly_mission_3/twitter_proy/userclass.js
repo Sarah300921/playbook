@@ -23,7 +23,7 @@ class User {
     }
     set setUsername (newUsername){
         this.username = newUsername
-       // console.log(this.username)
+        //console.log(this.username)
     }
     set setBio (newBio){
         this.bio = newBio
