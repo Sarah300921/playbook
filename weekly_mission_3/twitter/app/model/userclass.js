@@ -1,30 +1,32 @@
 // JavaScript source code
-class user {
-    constuctor(id, username, name, bio) {
+class User {
+    constructor(id, username, name, bio) {
         this.id = id
         this.username = username
         this.name = name
         this.bio = bio
         this.dateCreated = new Date()
-        this.lastUpdate = new Date()
+        this.lastUpdated = new Date()
     }
 
-    get fechaC (){
-        return this.dateCreated;
-    }
-    get fechaU (){
-        return this.lastUpdate;
-    }
     get getUsername(){
         return this.username;
     }
     get getBio() {
         return this.bio;
     }
+    get getDateCreated(){
+            return this.dateCreated;
+     }
+    get getLastUpdated(){
+            return this.lastUpdated;
+     }
     set setUsername (newUsername){
         this.username=newUsername
     }
-    set setBio (neBio){
+    set setBio (newBio){
         this.bio = newBio
     }
 }
+
+module.exports = User
