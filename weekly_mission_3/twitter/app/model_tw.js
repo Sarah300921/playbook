@@ -1,6 +1,6 @@
 // JavaScript source code
 
-const User = require('./../userclass'  )
+const User = require('./../model/userclass'  )
 class userService {
     
     static create(id, username, name, bio) {
@@ -26,6 +26,5 @@ class userService {
  
 }
 module.exports = User
-console.log("dsd model")
-console.log(bio)
+
 module.exports = userService

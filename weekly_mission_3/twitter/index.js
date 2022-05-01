@@ -1,6 +1,6 @@
 // JavaScript source code
 
-const User = require('./userclass');
+const User = require('./app/model/userclass');
 
 const usuario01 = new User("carlo01","AAAAA")
 console.log(usuario01.getUsername)
