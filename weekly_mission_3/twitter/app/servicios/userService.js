@@ -26,5 +26,6 @@ class UserService {
  
 }
 module.exports = User
-console.log("dsd model")
+
+console.log("*********dsd model*********")
 module.exports = UserService
