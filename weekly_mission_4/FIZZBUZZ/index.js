@@ -8,5 +8,4 @@ const explorers = Reader.readJsonFile("explorers.json")
 console.log(ExplorerService.porMision(explorers, "node"))
 console.log(ExplorerService.cantidadPorMision(explorers, "node"))
 console.log(ExplorerService.usernamePorMision(explorers, "node"))
-
-FizzBuzzService.validacionExplorerScore(explorers, "node")
+FizzBuzzService.validacionExplorerScore(explorers, "java node")
