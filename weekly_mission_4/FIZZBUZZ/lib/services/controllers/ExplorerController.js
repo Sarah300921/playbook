@@ -14,4 +14,5 @@ class ExplorerController {
     }
 
 }
-console.log(ExplorerController.getExplorerByMision("node"))
+module.exports = ExplorerController;
+//console.log(ExplorerController.getExplorerByMision("node"))
