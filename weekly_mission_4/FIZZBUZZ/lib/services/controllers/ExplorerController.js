@@ -3,16 +3,28 @@ const Reader = require("/../Users/sluevano68/Documents/Sarah/LaunchX/BackEnd/nod
 
 const ExplorerService = require("./../ExplorerService")
 const FizzBuzzService = require("./../FizzBuzzService")
+const { cantidadPorMision } = require("./../ExplorerService")
 
 class ExplorerController {
     static getExplorerByMision(mission) {
         const explorers = Reader.readJsonFile("explorers.json")
-        
-        const uni = ExplorerService.porMision(explorers, mission)
-           return uni
-                return explorers
-    }
+        const todosporMision = ExplorerService.porMision(explorers, mission)
+           return todosporMision
+     }
 
+    static getExplorersUsernamesByMission(mission) {
+        const explorers = Reader.readJsonFile("explorers.json")
+        const usernamesporMision = ExplorerService.usernamePorMision(explorers,mission) 
+            return usernamesporMision
+    }
+    static getExplorersAmountByMission(mission) {
+        const explorers = Reader.readJsonFile("explorers.json")
+        const numPorMision = ExplorerService.cantidadPorMision(explorers, mission)
+            return numPorMision
+    }
 }
-module.exports = ExplorerController;
-//console.log(ExplorerController.getExplorerByMision("node"))
+
+module.exports = ExplorerController
+console.log(ExplorerController.getExplorerByMision("node"))
+console.log(ExplorerController.getExplorersUsernamesByMission("node"))
+console.log("cantidad de Usuarios: " + ExplorerController.getExplorersAmountByMission("node"))
