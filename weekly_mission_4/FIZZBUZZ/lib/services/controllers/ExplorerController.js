@@ -7,6 +7,7 @@ const { cantidadPorMision } = require("./../ExplorerService")
 
 class ExplorerController {
     static getExplorerByMision(mission) {
+        
         const explorers = Reader.readJsonFile("explorers.json")
         const todosporMision = ExplorerService.porMision(explorers, mission)
            return todosporMision
@@ -25,6 +26,6 @@ class ExplorerController {
 }
 
 module.exports = ExplorerController
-console.log(ExplorerController.getExplorerByMision("node"))
-console.log(ExplorerController.getExplorersUsernamesByMission("node"))
-console.log("cantidad de Usuarios: " + ExplorerController.getExplorersAmountByMission("node"))
+//console.log(ExplorerController.getExplorerByMision("node"))
+//console.log(ExplorerController.getExplorersUsernamesByMission("node"))
+//console.log(`cantidad de usuarios en node:`+ ExplorerController.getExplorersAmountByMission("node"))
