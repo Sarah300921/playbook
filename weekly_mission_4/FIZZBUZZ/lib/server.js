@@ -1,4 +1,4 @@
-// JavaScript source code
+// JavaScript source code server.js
 const ExplorerController = require("./services/controllers/ExplorerController");
     
 const express = require("express");
