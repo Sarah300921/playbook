@@ -7,26 +7,26 @@ const { cantidadPorMision } = require("./../ExplorerService")
 
 class ExplorerController {
     static getExplorerByMision(mission) {
-        
+
         const explorers = Reader.readJsonFile("explorers.json")
         const todosporMision = ExplorerService.porMision(explorers, mission)
-           return todosporMision
-     }
+        return todosporMision
+    }
 
     static getExplorersUsernamesByMission(mission) {
         const explorers = Reader.readJsonFile("explorers.json")
-        const usernamesporMision = ExplorerService.usernamePorMision(explorers,mission) 
-            return usernamesporMision
+        const usernamesporMision = ExplorerService.usernamePorMision(explorers, mission)
+        return usernamesporMision
     }
     static getExplorersAmountByMission(mission) {
         const explorers = Reader.readJsonFile("explorers.json")
         const numPorMision = ExplorerService.cantidadPorMision(explorers, mission)
-            return numPorMision
+        return numPorMision
     }
 
     static getTest(mission) {
         const explorers = Reader.readJsonFile("explorers.json")
-        const trickEC = FizzBuzzService.validacionExplorerScore(explorers,mission)
+        const trickEC = FizzBuzzService.validacionExplorerScore(explorers, mission)
         return trickEC
     }
 
