@@ -35,11 +35,9 @@ app.get("/explorers/gitusernames/:mission", (request, response) => {
     response.json(gitExplorersInMision);
 });
 
-
 app.get("/fizzbuzz/", (request, response) => {
     response.json("FizzBuzz area");
 });
-
 
 app.get("/fizzbuzz/:score", (request, response) => {
     const score = request.params.score;
