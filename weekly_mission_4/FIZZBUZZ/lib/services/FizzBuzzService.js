@@ -1,6 +1,6 @@
 // JavaScript source code
 class FizzbuzzService {
-    static validacionExplorerScore(explorers,mission) {
+    static validacionExplorerScore(explorers, mission) {
         const validacionExplorerMision = explorers.filter((explorer) => explorer.mission === mission)
         const validation = validacionExplorerMision.map((explorer) => {
             if (explorer.score % 5 === 0 && explorer.score % 3 === 0) {
@@ -19,7 +19,7 @@ class FizzbuzzService {
                 explorer.trick = explorer.score;
                 console.log(explorer.name + " " + explorer.score)
                 return explorer;
-            }           
+            }
         })
         return validation;
     }
