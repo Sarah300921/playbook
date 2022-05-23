@@ -46,3 +46,10 @@ app.get("/fizzbuzz/:score", (request, response) => {
     response.json({ "score": score, "trick": getScore });
 });
 
+app.get("/explorers/stacks/:stacks", (request, response) => {
+    const stacks = request.params.stacks;
+    const explorersByStack = ExplorerController.getExplorerByStack(stacks);
+
+    response.json(explorersByStack);
+});
+

@@ -1,3 +1,4 @@
+
 // JavaScript source code
 const Reader = require("/../Users/sluevano68/Documents/Sarah/LaunchX/BackEnd/nodejs/playbook/weekly_mission_4/FIZZBUZZ/lib/utils/Reader")
 
@@ -32,14 +33,22 @@ class ExplorerController {
 
     static getFizzBuzz(score) {
         const fizzbuzzScore = FizzBuzzService.applyValidacionInNumber(score)
-        //console.log(fizzbuzzScore)
+
         return fizzbuzzScore
     }
+
+    static getExplorerByStack(stacks) {
+        const explorers = Reader.readJsonFile("explorers.json")
+        const explorersPorStack = ExplorerService.filterExplorerPorStack(explorers, stacks)
+
+        return explorersPorStack
+    }
+
 }
 
 module.exports = ExplorerController
 
-
+//console.log(ExplorerController.getExplorerByStack("elm"))
 //console.log(ExplorerController.getFizzBuzz(30))
 //console.log(ExplorerController.getTest("java"))
 //console.log(ExplorerController.getExplorerByMision("java"))
